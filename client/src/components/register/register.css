@@ -1,0 +1,95 @@
+.register-container{
+    display: flex;
+    justify-content: center;
+}
+
+.accounts{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.accounts h1{
+    text-align: left;
+}
+
+.account-item{
+    border-top: 5px solid #005F6A;
+    margin:1rem;
+    padding: 1rem 8rem 3rem 1rem;
+    text-align: left;
+    background-color: rgb(240, 239, 239);
+}
+
+/* ------------------------------- Dashboard ------------------------------------------- */
+.content-container{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 10px #ddd;
+    bottom: 10%;
+    padding: 2rem;
+  }
+
+  .content-container .second{
+    text-align: left;
+  }
+
+  .content-container p{
+    font-size: 1rem;
+  }
+
+  .nav-content{
+    background-color: #005F6A;
+    height: 50vh;
+  }
+
+  .banner-content .nav-items{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 5px solid yellow;
+  }
+
+  .banner-content .nav-items .item{
+    padding: 1rem;
+    color: #fff;
+  }
+
+  .account-statement{
+    color: #fff;
+  }
+
+  .current-balance{
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+  }
+
+  .act-item{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .act-item div{
+    margin-bottom: 1rem;
+  }
+
+  .act-item p{
+    line-height: 1.2px;
+  }
+
+  .act-item span{
+    font-size: 10px;
+  }
+
+  .item .logo{
+    width: 150px;
+    height: 50px;
+    object-fit: cover;
+  }
+  
+  
+
+  /* ---------------------------------- !Dashboard -------------------------------- */
