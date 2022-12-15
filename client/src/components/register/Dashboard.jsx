@@ -58,16 +58,16 @@ export default function Dashboard() {
               <div className="act-item">
                 <div>
                   <p>Payment with QR code</p>
-                  <span>03/12/22</span>
+                  <span>05/12/21</span>
                 </div>
                 <div className="">
-                  <span>#1,500, 000.89</span>
+                  <span>#1, 500, 000.89</span>
                 </div>
               </div>
               <div className="act-item">
                 <div>
                   <p>Payment with QR code</p>
-                  <span>03/12/22</span>
+                  <span>03/12/20</span>
                 </div>
                 <div className="">
                   <span>#1, 000, 000.00</span>
