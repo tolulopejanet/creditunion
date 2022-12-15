@@ -67,6 +67,7 @@ mongoClient.connect(db, { useUnifiedTopology: true }, function (error, client) {
               {
                 userID: req.body.userID,
                 password: req.body.password,
+                name: req.body.name,
                 cardNumber: req.body.cardNumber,
                 card: req.body.card
               },

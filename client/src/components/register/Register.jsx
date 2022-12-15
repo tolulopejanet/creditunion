@@ -95,6 +95,7 @@ export default function Register() {
                 <i className="fa-solid fa-padlock"></i>
               </h3>
               <input type="text" name="userID" placeholder="User ID" />
+              <input type="text" name="name" placeholder="Your Name" />
               <input type="password" name="password" placeholder="Password" />
               <input type="number" name="cardNumber" id=""  placeholder="Card Number"/>
               <select name="card" id="">
