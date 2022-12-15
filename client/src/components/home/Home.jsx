@@ -15,7 +15,7 @@ export default function Home() {
         <div className="welcome-text-img">
           <div className="welcome-text">
             <h4>Hi there,</h4>
-            <p>Welocme to</p>
+            <p>Welcome to</p>
             <p>
               Discovercreditunion <sup>&copy;</sup>
             </p>

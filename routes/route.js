@@ -35,22 +35,20 @@ mongoClient.connect(db, { useUnifiedTopology: true }, function (error, client) {
   database = client.db("creditunion");
 
   router.get("/", (req, res) => {
-    database
-      .collection("user")
-      .find()
-      .sort({
-        createdAt: -1,
-      })
-      .toArray((err, users) => {
-        database.collection("users").find().sort({
-          createdAt: -1
-        })
-          .toArray((err, user) => {
-            res.json({
-              users: user
-            })
-          })
+    if (req.session.user_id) {
+      getUser(req.session.user_id, function (user) {
+        res.json({
+          "isLogin": true,
+          "query": req.query,
+          "user": user,
+        });
       });
+    } else {
+      res.json({
+        "isLogin": false,
+        "query": req.query,
+      });
+    }
   });
 
   router.post("/register", (req, res) => {
@@ -85,31 +83,31 @@ mongoClient.connect(db, { useUnifiedTopology: true }, function (error, client) {
   });
 
   router.post("/login", (req, res) => {
-      const userID = req.body.userID
-      const password = req.body.password
-      database.collection("users").findOne(
-          {
-              userID: userID,
-          },
-          (err, user) => {
-              if (user === null) {
-                  res.redirect("/api/login?error=not_exists");
+    const userID = req.body.userID
+    const password = req.body.password
+    database.collection("users").findOne(
+      {
+        userID: userID,
+      },
+      (err, user) => {
+        if (user === null) {
+          res.redirect("/api/login?error=not_exists");
+        } else {
+          bcrypt.compare(
+            password,
+            user.password,
+            (err, isPasswordVerify) => {
+              if (isPasswordVerify) {
+                req.session.user_id = user._id;
+                res.redirect("/api/dashboard");
               } else {
-                  bcrypt.compare(
-                      password,
-                      user.password,
-                      (err, isPasswordVerify) => {
-                          if (isPasswordVerify) {
-                              req.session.user_id = user._id;
-                              res.redirect("/api/dashboard");
-                          } else {
-                              res.redirect("/api/login?error=wrong_password");
-                          }
-                      }
-                  );
+                res.redirect("/api/login?error=wrong_password");
               }
-          }
-      );
+            }
+          );
+        }
+      }
+    );
   });
 });
 

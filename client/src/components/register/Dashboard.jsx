@@ -31,7 +31,7 @@ export default function Dashboard() {
                 <Link to="/">logo</Link>
               </div>
               <div className="item">
-                Welcome, Robert
+                Welcome, {user && user.name ? user.name : ""}
               </div>
               <div className="item">
                 <Link to="/">logo</Link>
@@ -41,7 +41,7 @@ export default function Dashboard() {
             <br />
             <div className="account-statement">
               <p>Estimated Account Details</p>
-              <h3>#2,500, 000.89</h3>
+              <h3>#2, 500, 000.89</h3>
               <p>Account Balance</p>
             </div>
             <div className="current-balance">
