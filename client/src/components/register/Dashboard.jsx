@@ -31,7 +31,7 @@ export default function Dashboard() {
                 <Link to="/">logo</Link>
               </div>
               <div className="item">
-                Welcome, {user && user.name ? user.name : ""}
+                Welcome, {user && user.name ? user.name : "Robert"}
               </div>
               <div className="item">
                 <Link to="/">logo</Link>
