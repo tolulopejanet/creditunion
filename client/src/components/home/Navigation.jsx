@@ -11,65 +11,73 @@ export default function Navigation() {
 
   return (
     <nav className="nav">
-      <div
-        class="hide"
-        type="button"
-        data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasWithBothOptions"  
-        aria-controls="offcanvasWithBothOptions"
-      >
-        <i className="fa-solid fa-bars"></i>&nbsp;Menu
+      <div className="hide">
+        <div
+          class="hide"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasWithBothOptions"
+          aria-controls="offcanvasWithBothOptions"
+        >
+          <i className="fa-solid fa-bars"></i>&nbsp;Menu
+        </div>
+
+        <div
+          class="offcanvas offcanvas-start"
+          data-bs-scroll="true"
+          tabindex="-1"
+          id="offcanvasWithBothOptions"
+          aria-labelledby="offcanvasWithBothOptionsLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+              Backdrop with scrolling
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <p>
+              Try scrolling the rest of the page to see this option in action.
+            </p>
+          </div>
+        </div>
       </div>
 
-      <div
-        class="hide offcanvas offcanvas-start"
-        data-bs-scroll="true"
-        tabindex="-1"
-        id="offcanvasWithBothOptions"
-        aria-labelledby="offcanvasWithBothOptionsLabel"
-      >
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
-            Backdrop with scrolling
-          </h5>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close"
-          ></button>
-        </div>
-        <div class="offcanvas-body">
-          <p>
-            Try scrolling the rest of the page to see this option in action.
-          </p>
-        </div>
-      </div>
       <div className="logo">
         <img src={logo} alt="" className="logo-img" />
       </div>
+      
       <div className="nav-items">
-        <ul className="show">
-          <li>
-            All products&nbsp;<i class="fa-solid fa-angle-down"></i>
-          </li>
-          <li>
-            <i class="fa-regular fa-circle-question"></i>&nbsp;Help and
-            Resources
-          </li>
-          <li>
-            <i class="fa-solid fa-magnifying-glass">&nbsp;</i>Search
-          </li>
-        </ul>
-        <a
-          onClick={(e) => {
-            e.preventDefault();
-            setPreviewVisible(true);
-          }}
-          className="login"
-        >
-          Log in
-        </a>
+        <div className="show">
+          <ul className="show">
+            <li>
+              All products&nbsp;<i class="fa-solid fa-angle-down"></i>
+            </li>
+            <li>
+              <i class="fa-regular fa-circle-question"></i>&nbsp;Help and
+              Resources
+            </li>
+            <li>
+              <i class="fa-solid fa-magnifying-glass">&nbsp;</i>Search
+            </li>
+          </ul>
+        </div>
+        <div className="">
+          <a
+            onClick={(e) => {
+              e.preventDefault();
+              setPreviewVisible(true);
+            }}
+            className="login"
+          >
+            Log in
+          </a>
+        </div>
       </div>
 
       <Modal visible={previewVisible} footer={null} onCancel={handleCancel}>

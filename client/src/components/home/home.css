@@ -12,12 +12,16 @@ li{
 
 .hide{
     display: none;
+    width: 80px;
+    height: 40px;
+    margin-top: .8rem;
 }
 
 .nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     height: 80px;
+    /* padding: 0 .5rem; */
     /* background-color: green; */
 }
 
@@ -49,6 +53,8 @@ li{
     background-color: #005F6A;
     color: #fff;
     padding: 0.7rem 1.2rem;
+    height: 50px;
+    width: 100px;
     text-decoration: none;
     border-radius: 1.2rem;
     position: absolute;
@@ -203,7 +209,13 @@ li{
 @media screen and (max-width: 768px){
     .hide{
         display: block;
-        margin-top: 2rem;
+        position: relative;
+        /* margin-top: 2rem; */
+    }
+
+    .nav{
+        justify-content: space-between;
+        padding: 0 .3rem;
     }
 
     .nav ul{
@@ -220,11 +232,13 @@ li{
         height: 60px;
     }
 
-    nav .login{
-        padding: 0.7rem 1.2rem;
-        position: absolute;
-        right: 0;
-        top: 0; 
+    .nav .nav-items{
+        position: static;
+        padding-top: 2rem;
+    }
+    
+    .nav .login{
+        position: static;
     }
 
     .services-body .service-items{
