@@ -26,9 +26,9 @@ li{
 }
 
 .nav .logo, .form-container .logo{
-    width: 110px;
-    margin-top: 1rem;
-    height: 60px;
+    width: 100px;
+    margin-top: .8rem;
+    height: 50px;
 }
 
 .nav .logo-img, .form-container .logo-img{
@@ -49,11 +49,19 @@ li{
     position: relative;
 }
 
+.nav .nav-items li{
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 300;
+    margin-right: 4rem;
+}
+
 .nav .login{
     background-color: #005F6A;
     color: #fff;
-    padding: 0.7rem 1.2rem;
-    height: 50px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    height: 40px;
     width: 100px;
     text-decoration: none;
     border-radius: 1.2rem;
@@ -62,10 +70,6 @@ li{
     top: 1.2rem;
 }
 
-.nav ul li{
-    font-size: 1.2rem;
-    margin-right: 4rem;
-}
 
 /* ---------------------------- !Nav ----------------------------- */
 
@@ -90,11 +94,13 @@ li{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* width: 50%; */
     margin-right: 2rem;
 }
 
 .welcome-text h4{
     font-size: 3.5rem;
+    font-weight: 400;
 }
 
 .welcome-text p{
@@ -104,7 +110,8 @@ li{
 .welcome-img{
     width: 300px;
     height: 300px;
-    border: 10px solid #005F6A;
+    
+    border: 7px solid #005F6A;
     border-radius: 50%;
     position: relative;
     /* background-color: blue; */
@@ -128,7 +135,12 @@ li{
 
 .services-head{
     /* background-color: orangered; */
-    margin: 2rem 0 3rem 0;
+    margin: 2rem 0 1rem 0;
+}
+
+.services-head h1{
+    font-weight: 400;
+    font-size: 2.5rem;
 }
 
 .services-body{
@@ -143,19 +155,24 @@ li{
 
 .services-body .service-item{
     position: relative;
-    /* background-color: beige; */
-    padding: 2rem;
-    margin-right: .5rem;
+    padding: 1rem;
+    margin-right: .3rem;
+}
+
+.services-body .service-item h4{
+    font-size: 1.2rem;
+    font-weight: 300;
 }
 
 .services-body .service-item i{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
+    font-weight: 300;
 }
 
 .vertical-line{
     width: 1px;
     border: 1px solid #ddd;
-    height: 100px;
+    height: 90px;
     position: absolute;
     top: 10%;
     right: 0;
@@ -203,6 +220,53 @@ li{
 /* ---------------------------- !Home \ login ----------------------------- */
 
 
+/* ---------------------------- sub services----------------------------- */
+
+.sub-services{
+     /* background: red; */
+     display: flex;
+     justify-content: center;
+}
+
+.sub-items{
+    /* background-color: white; */
+    display: flex;
+}
+
+.sub-services .sub-items .sub-item{
+    width: 500px;
+    text-align: left;
+    margin: 1rem;
+    background-color:aliceblue ;
+}
+
+.sub-services .sub-items .sub-item2{
+    width: 300px;
+}
+
+.sub-services .rad-1 .sub-bg{
+    /* background-color: blue; */
+    border-top-left-radius: 40%;
+}
+
+.sub-services .rad-2 .sub-bg{
+    /* background-color: blue; */
+    border-bottom-right-radius: 40%;
+}
+
+
+.sub-item .sub-bg{
+    height: 200px;
+    width: 100%;
+    background-color: rgb(179, 154, 122);
+}
+
+.sub-item .sub-text{
+    margin-top: .5rem;
+}
+
+
+/* ---------------------------- !sub services ----------------------------- */
 
 
 
@@ -220,10 +284,6 @@ li{
 
     .nav ul{
         display: none;
-    }
-
-    .welcome-text-img{
-        flex-direction: column;
     }
 
     .nav .logo, .form-container .logo{
@@ -252,5 +312,37 @@ li{
 }
 
 @media screen and (max-width: 430px){
+    /* --------------------------- Welcome ----------------------------- */
+
+    .welcome{
+        height: fit-content;
+    }
+
+    .welcome-text h4{
+        font-size: 1.3em;
+    }
+    .welcome-text p{
+        font-size: .9em;
+    }
+
+    .welcome-img{
+        width: 150px;
+        height: 150px;
+    }
+    /* --------------------------- !Welcome ----------------------------- */
+
+    .services-body .service-items{
+        width: 100%;
+        overflow: auto;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .sub-items{
+        flex-direction: column;
+    }
+
+    .sub-services .sub-items .sub-item{
+        width: 90%;
+    }
 
 }
