@@ -26,9 +26,9 @@ li{
 }
 
 .nav .logo, .form-container .logo{
-    width: 110px;
-    margin-top: 1rem;
-    height: 60px;
+    width: 100px;
+    margin-top: .8rem;
+    height: 50px;
 }
 
 .nav .logo-img, .form-container .logo-img{
@@ -49,11 +49,19 @@ li{
     position: relative;
 }
 
+.nav .nav-items li{
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 300;
+    margin-right: 4rem;
+}
+
 .nav .login{
     background-color: #005F6A;
     color: #fff;
-    padding: 0.7rem 1.2rem;
-    height: 50px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    height: 40px;
     width: 100px;
     text-decoration: none;
     border-radius: 1.2rem;
@@ -62,10 +70,6 @@ li{
     top: 1.2rem;
 }
 
-.nav ul li{
-    font-size: 1.2rem;
-    margin-right: 4rem;
-}
 
 /* ---------------------------- !Nav ----------------------------- */
 
@@ -90,11 +94,13 @@ li{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* width: 50%; */
     margin-right: 2rem;
 }
 
 .welcome-text h4{
     font-size: 3.5rem;
+    font-weight: 400;
 }
 
 .welcome-text p{
@@ -104,7 +110,8 @@ li{
 .welcome-img{
     width: 300px;
     height: 300px;
-    border: 10px solid #005F6A;
+    
+    border: 7px solid #005F6A;
     border-radius: 50%;
     position: relative;
     /* background-color: blue; */
@@ -128,7 +135,12 @@ li{
 
 .services-head{
     /* background-color: orangered; */
-    margin: 2rem 0 3rem 0;
+    margin: 2rem 0 1rem 0;
+}
+
+.services-head h1{
+    font-weight: 400;
+    font-size: 2.5rem;
 }
 
 .services-body{
@@ -143,19 +155,24 @@ li{
 
 .services-body .service-item{
     position: relative;
-    /* background-color: beige; */
-    padding: 2rem;
-    margin-right: .5rem;
+    padding: 1rem;
+    margin-right: .3rem;
+}
+
+.services-body .service-item h4{
+    font-size: 1.2rem;
+    font-weight: 300;
 }
 
 .services-body .service-item i{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
+    font-weight: 300;
 }
 
 .vertical-line{
     width: 1px;
     border: 1px solid #ddd;
-    height: 100px;
+    height: 90px;
     position: absolute;
     top: 10%;
     right: 0;
@@ -203,6 +220,248 @@ li{
 /* ---------------------------- !Home \ login ----------------------------- */
 
 
+/* ---------------------------- sub services----------------------------- */
+
+.sub-services{
+     /* background: red; */
+     display: flex;
+     justify-content: center;
+}
+
+.sub-items{
+    /* background-color: white; */
+    display: flex;
+}
+
+.sub-services .sub-items .sub-item{
+    width: 500px;
+    text-align: left;
+    margin: 1rem;
+    background-color:aliceblue ;
+}
+
+.sub-services .sub-items .sub-item2{
+    width: 300px;
+}
+
+.sub-services .rad-1 .sub-bg{
+    /* background-color: blue; */
+    border-top-left-radius: 40%;
+}
+
+.sub-services .rad-2 .sub-bg{
+    /* background-color: blue; */
+    border-bottom-right-radius: 40%;
+}
+
+
+.sub-item .sub-bg{
+    height: 200px;
+    width: 100%;
+    background-color: rgb(179, 154, 122);
+}
+
+.sub-item .sub-text{
+    margin-top: .5rem;
+}
+
+
+/* ---------------------------- !sub services ----------------------------- */
+
+
+
+/* ---------------------------- members ----------------------------- */
+.members{
+    width: 100%;
+    height: 55vh;
+    background-color: #23233F;
+    border-bottom-right-radius: 10em;
+    margin: 2em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.members .color{
+    width: 250px;
+    height: 250px;
+    background-color: gold;
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 50%;
+}
+
+.member-star *{
+    color: #fff;
+    font-weight: 400;
+    text-align: left;
+}
+
+.members .member-star{
+    display: flex;
+    /* background-color: #ddd; */
+    width: 70%;
+    padding: 2rem 0;
+
+}
+
+.star .stars{
+    font-size: 2.6rem;
+    /* line-height: 4px; */
+    letter-spacing: 10px;
+    text-align: left;
+    color: gold;
+}
+
+.star .review{
+    line-height: 1.5px;
+    text-align: left;
+    font-size: 1.3rem;
+}
+
+.star button{
+    margin-top: 2rem;
+    padding: .3rem 1.8rem;
+    border-radius: 2.5rem;
+    text-align: left;
+    border: 3px solid #fff;
+    font-size: 1.2rem;
+    background-color: transparent;
+}
+
+.member-star .member{
+    width: 60%;
+    text-align: left;
+}
+
+.member-star .star{
+    width: 40%;
+}
+
+.member-star h1{
+    font-size: 3.8rem;
+}
+
+/* ---------------------------- !members ----------------------------- */
+
+
+/* ---------------------------- finances ----------------------------- */
+.finances{
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+}
+
+.finance{
+    /* background-color: white; */
+    width: 70%;
+}
+
+.finances .finance-header{
+    width: 75%;
+    border-bottom: 2em;
+    /* background-color: yellow; */
+    text-align: left;
+}
+
+.finances .finance-header h1{
+    font-size: 55px;
+}
+
+.finance-body{
+    display: flex;
+    justify-content: center;
+}
+
+.finance-body .left{
+    text-align: left;
+}
+
+.finance-body .left a{
+    text-decoration: none;
+}
+
+.finance-body .left .left-container{
+    width: 460px;
+    background-color: #ddd;
+    border-top-left-radius: 10rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    height: 350px;
+}
+
+.finance-body .right{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+.finance-body .right .right-item{
+    /* background-color: #005F6A; */
+    width: 230px;
+    text-align: left;
+    height: 197px;
+}
+
+.finance-body .right .last{
+    border-bottom-right-radius: 5rem;
+}
+
+.finance-body .right .right-item .item-img{
+    width: 100%;
+    height:70%;
+    background-color: #ddd;
+}
+
+.right-item .item-link{
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.more-articles{
+    display: flex;
+    /* background-color: red; */
+    justify-content: center;
+}
+
+.mores{
+    /* background-color: blue; */
+    text-align: left;
+    width: 70%;
+}
+
+.more-articles button{
+    border: 2px solid #005F6A;
+    background-color: transparent;
+    padding: .3rem 1.8rem;
+    font-size: 1.2rem;
+    transition: all .5s ease-in-out;
+    border-radius: 2.5rem;
+}
+
+.more-articles button:hover{
+    background-color: #005F6A;
+    color: white;
+}
+
+/* ---------------------------- !finances ----------------------------- */
+
+
+/* ---------------------------- savings ----------------------------- */
+.savings{
+    background-color: #005F6A;
+    height: 40vh;
+    width: 100%;
+    margin: 3em 0;
+}
+
+
+/* ---------------------------- !savings ----------------------------- */
 
 
 
@@ -222,10 +481,6 @@ li{
         display: none;
     }
 
-    .welcome-text-img{
-        flex-direction: column;
-    }
-
     .nav .logo, .form-container .logo{
         width: 110px;
         margin-top: .5rem;
@@ -243,14 +498,157 @@ li{
 
     .services-body .service-items{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
 
     .nav-items{
         display: inline-block;
     }
+
+    .sub-services .sub-items .sub-item{
+        width: 350px;
+    }
+
+    .sub-services .sub-items .sub-item2{
+        width: 220px;
+    }
+
+    .members .member-star{
+        flex-direction: column;
+        padding: 0;
+        /* background-color: blue; */
+        width: 60%;
+    }
+
+    .member-star h1{
+        font-size: 2rem;
+    }
+
+    .member-star .member{
+        width: 100%;
+    }
+    
+    .member-star .star{
+        width: 100%;
+    }
+
+    .finance-body .left .left-container{
+        width: 350px;
+    }
+    
+    .finance-body .right .right-item{
+        width: 180px;
+    }
+
+
+    .finances .finance-header{
+        width: 100%;
+        padding-right: 15rem;
+    }
+
+    .finance{
+        width: 100%;
+    }
+
+    .finances .finance-header h1{
+        font-size: 36px;
+    }
 }
 
 @media screen and (max-width: 430px){
+    /* --------------------------- Welcome ----------------------------- */
 
+    .welcome{
+        height: fit-content;
+    }
+
+    .welcome-text h4{
+        font-size: 1.3em;
+    }
+    .welcome-text p{
+        font-size: .9em;
+    }
+
+    .welcome-img{
+        width: 150px;
+        height: 150px;
+    }
+    /* --------------------------- !Welcome ----------------------------- */
+
+    .services-body .service-items{
+        width: 100%;
+        overflow: auto;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .sub-items{
+        flex-direction: column;
+    }
+
+    .sub-services .sub-items .sub-item{
+        width: 90%;
+    }
+
+    .members{
+        height: 70vh;
+    }
+
+    .members .member-star{
+        width: 85%;
+    }
+
+    .members .color{
+        width: 60px;
+        height: 60px;
+        left: -10px;
+    }
+
+    .member-star h1{
+        font-size: 1.5rem;
+    }
+
+    .finance-body .left .left-container{
+        width: 100%;
+    }
+
+    .finance-body .right .right-item{
+        width: 155px;
+    }
+
+    .finances{
+        margin: 1em;
+    }
+
+    .right-item .item-link{
+        font-size: 10px;
+    }
+
+    .finance{
+        width: 100%;
+    }
+
+    .finances .finance-header{
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .finance-header h1{
+        width: 100%;
+        font-size: 2rem;
+    }
+
+    .finance-body{
+        flex-direction: column;
+    }
+
+    .finance-body .left{
+        margin-bottom: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 320px){
+    .finance-body .right .right-item{
+        width: 140px;
+    }
 }
