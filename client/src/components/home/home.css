@@ -1,23 +1,23 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-li{
+li {
     list-style: none;
 }
 
 /* ---------------------------- Nav ----------------------------- */
 
-.hide{
+.hide {
     display: none;
     width: 80px;
     height: 40px;
     margin-top: .8rem;
 }
 
-.nav{
+.nav {
     display: flex;
     justify-content: space-evenly;
     height: 80px;
@@ -25,38 +25,40 @@ li{
     /* background-color: green; */
 }
 
-.nav .logo, .form-container .logo{
+.nav .logo,
+.form-container .logo {
     width: 100px;
     margin-top: .8rem;
     height: 50px;
 }
 
-.nav .logo-img, .form-container .logo-img{
+.nav .logo-img,
+.form-container .logo-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.nav ul{
+.nav ul {
     display: flex;
     justify-content: space-around;
     margin-right: 2rem;
     padding: 1.5rem;
 }
 
-.nav .nav-items{
+.nav .nav-items {
     display: flex;
     position: relative;
 }
 
-.nav .nav-items li{
+.nav .nav-items li {
     font-size: 1rem;
     cursor: pointer;
     font-weight: 300;
     margin-right: 4rem;
 }
 
-.nav .login{
+.nav .login {
     background-color: #005F6A;
     color: #fff;
     padding: 0.5rem 1rem;
@@ -74,7 +76,7 @@ li{
 /* ---------------------------- !Nav ----------------------------- */
 
 /* ---------------------------- Welcome ----------------------------- */
-.welcome{
+.welcome {
     background-color: #23233F;
     padding: .5em;
     overflow-y: hidden;
@@ -83,13 +85,13 @@ li{
 }
 
 
-.welcome-text-img{
+.welcome-text-img {
     display: flex;
     justify-content: center;
     /* padding: 2rem; */
 }
 
-.welcome-text{
+.welcome-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -98,26 +100,26 @@ li{
     margin-right: 2rem;
 }
 
-.welcome-text h4{
+.welcome-text h4 {
     font-size: 3.5rem;
     font-weight: 400;
 }
 
-.welcome-text p{
+.welcome-text p {
     font-size: 1.5rem;
 }
 
-.welcome-img{
+.welcome-img {
     width: 300px;
     height: 300px;
-    
+
     border: 7px solid #005F6A;
     border-radius: 50%;
     position: relative;
     /* background-color: blue; */
 }
 
-.welcome-img img{
+.welcome-img img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
@@ -127,49 +129,50 @@ li{
     left: 0;
 
 }
+
 /* ---------------------------- !Welcome ----------------------------- */
 
 
 
 /* ---------------------------- Services ----------------------------- */
 
-.services-head{
+.services-head {
     /* background-color: orangered; */
     margin: 2rem 0 1rem 0;
 }
 
-.services-head h1{
+.services-head h1 {
     font-weight: 400;
     font-size: 2.5rem;
 }
 
-.services-body{
+.services-body {
     display: flex;
     justify-content: center;
 }
 
-.services-body .service-items{
+.services-body .service-items {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
-.services-body .service-item{
+.services-body .service-item {
     position: relative;
     padding: 1rem;
     margin-right: .3rem;
 }
 
-.services-body .service-item h4{
+.services-body .service-item h4 {
     font-size: 1.2rem;
     font-weight: 300;
 }
 
-.services-body .service-item i{
+.services-body .service-item i {
     font-size: 1.5rem;
     font-weight: 300;
 }
 
-.vertical-line{
+.vertical-line {
     width: 1px;
     border: 1px solid #ddd;
     height: 90px;
@@ -183,27 +186,28 @@ li{
 
 
 /* ---------------------------- Home \ login ----------------------------- */
-.form-container .signup-logo{
+.form-container .signup-logo {
     display: flex;
     justify-content: center;
 }
 
-.form-content h3{
+.form-content h3 {
     text-align: center;
 }
 
-.form-content input, .form-content select{
+.form-content input,
+.form-content select {
     width: 100%;
     margin-bottom: 1rem;
     padding: .5rem 1rem;
     border: 1px solid #ddd;
 }
 
-.form-content .checkbox{
+.form-content .checkbox {
     width: 10%;
 }
 
-.form-content button{
+.form-content button {
     padding: .7rem 1.2rem;
     border-radius: 1rem;
     border: none;
@@ -211,7 +215,7 @@ li{
     color: #fff;
 }
 
-.form-container a{
+.form-container a {
     text-decoration: none;
     font-size: .8rem;
 }
@@ -222,46 +226,45 @@ li{
 
 /* ---------------------------- sub services----------------------------- */
 
-.sub-services{
-     /* background: red; */
-     display: flex;
-     justify-content: center;
+.sub-services {
+    /* background: red; */
+    display: flex;
+    justify-content: center;
 }
 
-.sub-items{
+.sub-items {
     /* background-color: white; */
     display: flex;
 }
 
-.sub-services .sub-items .sub-item{
+.sub-services .sub-items .sub-item {
     width: 500px;
     text-align: left;
     margin: 1rem;
-    background-color:aliceblue ;
 }
 
-.sub-services .sub-items .sub-item2{
+.sub-services .sub-items .sub-item2 {
     width: 300px;
 }
 
-.sub-services .rad-1 .sub-bg{
+.sub-services .rad-1 .sub-bg {
     /* background-color: blue; */
     border-top-left-radius: 40%;
 }
 
-.sub-services .rad-2 .sub-bg{
+.sub-services .rad-2 .sub-bg {
     /* background-color: blue; */
     border-bottom-right-radius: 40%;
 }
 
 
-.sub-item .sub-bg{
+.sub-item .sub-bg {
     height: 200px;
     width: 100%;
     background-color: rgb(179, 154, 122);
 }
 
-.sub-item .sub-text{
+.sub-item .sub-text {
     margin-top: .5rem;
 }
 
@@ -271,7 +274,7 @@ li{
 
 
 /* ---------------------------- members ----------------------------- */
-.members{
+.members {
     width: 100%;
     height: 55vh;
     background-color: #23233F;
@@ -283,7 +286,7 @@ li{
     position: relative;
 }
 
-.members .color{
+.members .color {
     width: 250px;
     height: 250px;
     background-color: gold;
@@ -294,13 +297,13 @@ li{
     border-radius: 50%;
 }
 
-.member-star *{
+.member-star * {
     color: #fff;
     font-weight: 400;
     text-align: left;
 }
 
-.members .member-star{
+.members .member-star {
     display: flex;
     /* background-color: #ddd; */
     width: 70%;
@@ -308,7 +311,7 @@ li{
 
 }
 
-.star .stars{
+.star .stars {
     font-size: 2.6rem;
     /* line-height: 4px; */
     letter-spacing: 10px;
@@ -316,13 +319,13 @@ li{
     color: gold;
 }
 
-.star .review{
+.star .review {
     line-height: 1.5px;
     text-align: left;
     font-size: 1.3rem;
 }
 
-.star button{
+.star button {
     margin-top: 2rem;
     padding: .3rem 1.8rem;
     border-radius: 2.5rem;
@@ -332,16 +335,16 @@ li{
     background-color: transparent;
 }
 
-.member-star .member{
+.member-star .member {
     width: 60%;
     text-align: left;
 }
 
-.member-star .star{
+.member-star .star {
     width: 40%;
 }
 
-.member-star h1{
+.member-star h1 {
     font-size: 3.8rem;
 }
 
@@ -349,43 +352,43 @@ li{
 
 
 /* ---------------------------- finances ----------------------------- */
-.finances{
+.finances {
     /* background-color: red; */
     display: flex;
     justify-content: center;
     margin: 3rem;
 }
 
-.finance{
+.finance {
     /* background-color: white; */
     width: 70%;
 }
 
-.finances .finance-header{
+.finances .finance-header {
     width: 75%;
     border-bottom: 2em;
     /* background-color: yellow; */
     text-align: left;
 }
 
-.finances .finance-header h1{
+.finances .finance-header h1 {
     font-size: 55px;
 }
 
-.finance-body{
+.finance-body {
     display: flex;
     justify-content: center;
 }
 
-.finance-body .left{
+.finance-body .left {
     text-align: left;
 }
 
-.finance-body .left a{
+.finance-body .left a {
     text-decoration: none;
 }
 
-.finance-body .left .left-container{
+.finance-body .left .left-container {
     width: 460px;
     background-color: #ddd;
     border-top-left-radius: 10rem;
@@ -394,48 +397,48 @@ li{
     height: 350px;
 }
 
-.finance-body .right{
+.finance-body .right {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
 }
 
-.finance-body .right .right-item{
+.finance-body .right .right-item {
     /* background-color: #005F6A; */
     width: 230px;
     text-align: left;
     height: 197px;
 }
 
-.finance-body .right .last{
+.finance-body .right .last {
     border-bottom-right-radius: 5rem;
 }
 
-.finance-body .right .right-item .item-img{
+.finance-body .right .right-item .item-img {
     width: 100%;
-    height:70%;
+    height: 70%;
     background-color: #ddd;
 }
 
-.right-item .item-link{
+.right-item .item-link {
     font-size: 14px;
     text-decoration: none;
     font-weight: 400;
 }
 
-.more-articles{
+.more-articles {
     display: flex;
     /* background-color: red; */
     justify-content: center;
 }
 
-.mores{
+.mores {
     /* background-color: blue; */
     text-align: left;
     width: 70%;
 }
 
-.more-articles button{
+.more-articles button {
     border: 2px solid #005F6A;
     background-color: transparent;
     padding: .3rem 1.8rem;
@@ -444,7 +447,7 @@ li{
     border-radius: 2.5rem;
 }
 
-.more-articles button:hover{
+.more-articles button:hover {
     background-color: #005F6A;
     color: white;
 }
@@ -453,202 +456,457 @@ li{
 
 
 /* ---------------------------- savings ----------------------------- */
-.savings{
+.savings {
     background-color: #005F6A;
-    height: 40vh;
+    height: 45vh;
     width: 100%;
     margin: 3em 0;
+}
+
+.savings .savings-items {
+    display: flex;
+}
+
+.savings .savings-items .item-1 {
+    background-color: #15063b;
+    border-right: 3px solid #fff;
+    border-top-right-radius: 12rem;
+    border-bottom-right-radius: 12rem;
+    margin-right: 6rem;
+    width: 30%;
+    height: 45vh;
+}
+
+.savings .savings-items .item-2 {
+    display: flex;
+    margin-left: 2rem;
+    align-items: center;
+    width: 40%;
+
+}
+
+.savings .savings-items .item-2 div {
+    text-align: left;
+}
+
+.savings .savings-items .item-2 h1 {
+    font-size: 2.8rem;
+    margin-bottom: .5em;
+    color: white;
+    line-height: 1;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.savings .savings-items .item-2 p {
+    font-weight: 500;
+    color: white;
+    font-size: 16px;
+    margin-right: 5em;
+    margin-bottom: 1.8em;
+}
+
+.savings .savings-items .item-2 button {
+    border: 2px solid #fff;
+    background-color: transparent;
+    padding: .3rem 1.8rem;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: all .5s ease-in-out;
+    border-radius: 2.5rem;
+}
+
+.savings .savings-items .item-2 button:hover {
+    background-color: #092d31;
+    color: #fff;
 }
 
 
 /* ---------------------------- !savings ----------------------------- */
 
 
+/* ---------------------------- !financial needs ----------------------------- */
+.financial-needs {
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+}
 
-@media screen and (max-width: 768px){
-    .hide{
+
+
+.needs {
+    width: 70%;
+}
+
+.financial-needs .needs-head {
+    width: 75%;
+    margin-bottom: 4em;
+    text-align: left;
+}
+
+.financial-needs .needs-head h1 {
+    font-size: 55px;
+}
+
+.needs-body .needs-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem 1rem;
+}
+
+.needs-body .needs-item{
+    width: 285px;
+    text-align: left;
+}
+
+.needs-body .needs-item h4{
+    /* margin-bottom: 1rem; */
+    font-size: 1.2rem;
+}
+
+.needs-body .needs-item p{
+    font-weight: 450;
+    /* letter-spacing: 1px; */
+    line-height: 1.2;
+}
+
+.dummy-paragraph{
+    /* padding: 1rem 0; */
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #ddd;
+}
+
+
+
+/* ---------------------------- !financial needs ----------------------------- */
+
+
+
+/* ---------------------------- footer ----------------------------- */
+.footer{
+    /* background-color: blue; */
+    /* color: #fff; */
+    display: flex;
+    justify-content: center;
+}
+
+
+.footer-items{
+    /* background-color: red; */
+    text-align: left;
+    display: grid;
+    width: 800px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2rem 1rem;
+}
+
+.footer-items .item{
+    text-align: left;
+    width: 180px;
+    padding: 0 2px;
+}
+
+.footer-items .item h4{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.footer-items .item ul{
+    padding: 0;
+}
+
+.footer-items .item ul li{
+    font-size: 13px;
+    margin-bottom: .5em;
+}
+
+.footer-items .item ul li a{
+    text-decoration: none;
+    /* color: #fff; */
+}
+
+/* ---------------------------- !footer ----------------------------- */
+
+
+
+@media screen and (max-width: 768px) {
+    .hide {
         display: block;
         position: relative;
         /* margin-top: 2rem; */
     }
 
-    .nav{
+    .nav {
         justify-content: space-between;
         padding: 0 .3rem;
     }
 
-    .nav ul{
+    .nav ul {
         display: none;
     }
 
-    .nav .logo, .form-container .logo{
+    .nav .logo,
+    .form-container .logo {
         width: 110px;
         margin-top: .5rem;
         height: 60px;
     }
 
-    .nav .nav-items{
+    .nav .nav-items {
         position: static;
         padding-top: 2rem;
     }
-    
-    .nav .login{
+
+    .nav .login {
         position: static;
     }
 
-    .services-body .service-items{
+    .services-body .service-items {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
 
-    .nav-items{
+    .nav-items {
         display: inline-block;
     }
 
-    .sub-services .sub-items .sub-item{
+    .sub-services .sub-items .sub-item {
         width: 350px;
     }
 
-    .sub-services .sub-items .sub-item2{
+    .sub-services .sub-items .sub-item2 {
         width: 220px;
     }
 
-    .members .member-star{
+    .members .member-star {
         flex-direction: column;
         padding: 0;
         /* background-color: blue; */
         width: 60%;
     }
 
-    .member-star h1{
+    .member-star h1 {
         font-size: 2rem;
     }
 
-    .member-star .member{
-        width: 100%;
-    }
-    
-    .member-star .star{
+    .member-star .member {
         width: 100%;
     }
 
-    .finance-body .left .left-container{
+    .member-star .star {
+        width: 100%;
+    }
+
+    .finance-body .left .left-container {
         width: 350px;
     }
-    
-    .finance-body .right .right-item{
+
+    .finance-body .right .right-item {
         width: 180px;
     }
 
 
-    .finances .finance-header{
+    .finances .finance-header {
         width: 100%;
         padding-right: 15rem;
     }
 
-    .finance{
+    .finance {
         width: 100%;
     }
 
-    .finances .finance-header h1{
+    .finances .finance-header h1 {
         font-size: 36px;
+    }
+
+
+    .savings {
+        height: 68vh;
+    }
+
+    .savings .savings-items .item-1 {
+        border-top-right-radius: 12rem;
+        border-bottom-right-radius: 12rem;
+        margin-right: 3rem;
+        height: 68vh;
+    }
+
+    .savings .savings-items .item-2 {
+        margin-left: 1rem;
+        width: 70%;
+
+    }
+
+
+
+    .needs {
+        width: 90%;
+    }
+    
+    .financial-needs .needs-head {
+        width: 100%;
+    }
+
+    .needs-body .needs-item{
+        width: 200px;
     }
 }
 
-@media screen and (max-width: 430px){
+@media screen and (max-width: 430px) {
     /* --------------------------- Welcome ----------------------------- */
 
-    .welcome{
+    .welcome {
         height: fit-content;
     }
 
-    .welcome-text h4{
+    .welcome-text h4 {
         font-size: 1.3em;
     }
-    .welcome-text p{
+
+    .welcome-text p {
         font-size: .9em;
     }
 
-    .welcome-img{
+    .welcome-img {
         width: 150px;
         height: 150px;
     }
+
     /* --------------------------- !Welcome ----------------------------- */
 
-    .services-body .service-items{
+    .services-body .service-items {
         width: 100%;
         overflow: auto;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
 
-    .sub-items{
+    .sub-items {
         flex-direction: column;
     }
 
-    .sub-services .sub-items .sub-item{
+    .sub-services .sub-items .sub-item {
         width: 90%;
     }
 
-    .members{
+    .members {
         height: 70vh;
     }
 
-    .members .member-star{
+    .members .member-star {
         width: 85%;
     }
 
-    .members .color{
+    .members .color {
         width: 60px;
         height: 60px;
         left: -10px;
     }
 
-    .member-star h1{
+    .member-star h1 {
         font-size: 1.5rem;
     }
 
-    .finance-body .left .left-container{
+    .finance-body .left .left-container {
         width: 100%;
     }
 
-    .finance-body .right .right-item{
+    .finance-body .right .right-item {
         width: 155px;
     }
 
-    .finances{
+    .finances {
         margin: 1em;
     }
 
-    .right-item .item-link{
+    .right-item .item-link {
         font-size: 10px;
     }
 
-    .finance{
+    .finance {
         width: 100%;
     }
 
-    .finances .finance-header{
+    .finances .finance-header {
         width: 100%;
         padding-right: 0;
     }
 
-    .finance-header h1{
+    .finance-header h1 {
         width: 100%;
         font-size: 2rem;
     }
 
-    .finance-body{
+    .finance-body {
         flex-direction: column;
     }
 
-    .finance-body .left{
+    .finance-body .left {
         margin-bottom: 1rem;
+    }
+
+
+    .savings {
+        height: 68vh;
+    }
+
+    .savings .savings-items{
+        position: relative;
+        justify-content: end;
+    }
+
+    .savings .savings-items .item-1 {
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+        position: absolute;
+        left: -110px;
+        margin-right: .5rem;
+        width: 40%;
+        height: 100px;
+    }
+
+    .savings .savings-items .item-2 {
+        margin-left: none;
+        width: 85%;
+        height: 100%;
+        margin-top: 2rem;
+        padding-right: .5rem;
+    }
+
+    .savings .savings-items .item-2 h1 {
+        font-size: 2rem;
+    }
+
+    .savings .savings-items .item-2 p {
+        margin-right: 0;
+        margin-bottom: 1.8em;
+    }
+
+
+
+    .needs {
+        width: 90%;
+        display: none;
     }
 
 }
 
-@media screen and (max-width: 320px){
-    .finance-body .right .right-item{
+@media screen and (max-width: 320px) {
+    .finance-body .right .right-item {
         width: 140px;
+    }
+
+    .savings .savings-items{
+        position: relative;
+        justify-content: end;
+    }
+
+    .savings .savings-items .item-1 {
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+        position: absolute;
+        left: -90px;
+        margin-right: .5rem;
+        width: 40%;
+        height: 100px;
     }
 }
